@@ -7,8 +7,20 @@ public class OOPs {
         System.out.println(p1.color);
         p1.setTip(5);
         System.out.println(p1.tip);
+
+        BankAccount myAcc=new BankAccount();
+        myAcc.username="Paras";
+        myAcc.setPass("blablabla");
     }
 
+}
+
+class BankAccount{
+    public String username;
+    private String password;
+    public void setPass(String pwd){
+        password=pwd;
+    }
 }
 
 class Pen{
