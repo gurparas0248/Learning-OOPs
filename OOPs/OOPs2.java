@@ -16,7 +16,7 @@ public class OOPs2 {
         s2.pass="xyz";
         s1.marks[2]=100;
         for(int i=0;i<3;i++){
-            System.out.println(s2.marks[i]); 
+            System.out.println(s2.marks[i]);
         }
     }
 
