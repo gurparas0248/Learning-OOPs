@@ -5,8 +5,12 @@ import java.sql.SQLOutput;
 public class OOPs2 {
     public static void main(String[] args) {
         Student1 s1=new Student1();
-        Student1 s2=new Student1("Paras");
-        Student1 s3=new Student1(12);
+        s1.name="Paras";
+        s1.roll=8;
+        s1.pass="abcd";
+
+        Student1 s2=new Student1(s1);
+        s2.pass="xyz";
     }
 
 }
@@ -14,6 +18,13 @@ public class OOPs2 {
 class Student1{
     String name;
     int roll;
+    String pass;
+
+    //copy constructor
+    Student1(Student1 x){
+        this.name=x.name;
+        this.roll=x.roll;
+    }
 
 //    non-parameterized constructor
     Student1(){
