@@ -4,37 +4,40 @@ public class OOPs {
     public static void main(String[] args) {
         Pen p1=new Pen(); //created a pen object called p1
         p1.setColor("Blue");
-        System.out.println(p1.color);
+        System.out.println(p1.getColor());
         p1.setTip(5);
-        System.out.println(p1.tip);
+        System.out.println(p1.getTip());
 
-        BankAccount myAcc=new BankAccount();
-        myAcc.username="Paras";
-        myAcc.setPass("blablabla");
+        p1.setColor("Yellow");
+        System.out.println(p1.getColor());
+
     }
 
 }
 
-class BankAccount{
-    public String username;
-    private String password;
-    public void setPass(String pwd){
-        password=pwd;
-    }
-}
 
 class Pen{
     //properties
-    String color;
-    int tip;
+    private String color;
+    private int tip;
+
+    String getColor(){
+        return this.color;
+    }
+
+    int getTip(){
+        return this.tip;
+    }
 
     //functions
     void setColor(String newColor){
-        color=newColor;
+
+        this.color=newColor;
     }
 
     void setTip(int newTip){
-        tip =newTip;
+
+        this.tip =newTip;
     }
 }
 
