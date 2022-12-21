@@ -2,7 +2,7 @@ package OOPs;
 
 public class Ingeritance {
     public static void main(String[] args) {
-        
+
 
     }
 }
