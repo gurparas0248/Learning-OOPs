@@ -2,8 +2,10 @@ package OOPs;
 
 public class Ingeritance {
     public static void main(String[] args) {
-        Fish shark=new Fish();
-        shark.eat();
+        Dog dobby=new Dog();
+        dobby.eat();
+        dobby.legs=4;
+        System.out.println(dobby.legs);
 
     }
 }
@@ -19,11 +21,19 @@ class Animal{
     }
 }
 
-//derived class
-
-class Fish extends Animal{
-    int fins;
-    void swim(){
-        System.out.println("Swims in water");
-    }
+class Mammal extends Animal{
+    int legs;
 }
+
+class Dog extends Mammal{
+    String breed;
+
+}
+
+//derived class
+//class Fish extends Animal{
+//    int fins;
+//    void swim(){
+//        System.out.println("Swims in water");
+//    }
+//}
